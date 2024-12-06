@@ -1,0 +1,146 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("fonts/MYSCARS_.ttf") format("truetype"),
+    url("fonts/MYBLS___.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "MyCustomFont", Times, serif;
+}
+
+/* Styling untuk navbar */
+nav {
+  position: relative;
+  padding: 10px 0;
+  font-family: "MyCustomFont", Times, serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Tombol di kiri atas */
+nav ul li a.left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* Tombol di kanan atas */
+nav ul li a.right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "MyCustomFont", Times, serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment-name {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.comment-text {
+  margin-top: 5px;
+}
+
+/* Tambahkan ini ke diskusi.css */
+#listKomentar {
+  display: flex;
+  flex-direction: column; /* Menampilkan komentar dalam kolom */
+  gap: 1rem; /* Memberikan jarak antar komentar */
+  margin-top: 20px;
+}
+
+.comment {
+  word-wrap: break-word; /* Membungkus kata panjang */
+  overflow-wrap: break-word; /* Alternatif untuk kompatibilitas */
+  white-space: normal; /* Memastikan teks turun ke baris berikutnya */
+  padding: 10px; /* Memberikan ruang di dalam komentar */
+  border: 1px solid #ddd; /* Menambahkan border pada setiap komentar */
+  border-radius: 5px; /* Membuat sudut border melengkung */
+  background-color: #f9f9f9; /* Memberikan latar belakang komentar */
+}

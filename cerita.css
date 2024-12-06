@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("fonts/MYSCARS_.ttf") format("truetype"),
+    url("fonts/MYBLS___.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  background-color: #000;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Styling untuk navbar */
+nav {
+  position: relative;
+  padding: 10px 0;
+  font-family: "MyCustomFont", Times, serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Tombol di kiri atas */
+nav ul li a.left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* Tombol di kanan atas */
+nav ul li a.right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cerita {
+  border: 2px solid #e60000;
+  border-radius: 8px;
+  margin: 20px 0;
+  background-color: #444;
+}
+
+.cerita h2 {
+  font-family: "MyCustomFont", Times, serif;
+  color: #ffcccc;
+}
+
+.cerita p {
+  font-size: 150%;
+  text-align: justify;
+  color: #ddd;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cerita button {
+  background-color: #e60000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cerita button:hover {
+  background-color: #b30000; /* Warna tombol saat dihover */
+}
+
+.ceritaLanjut {
+  margin-top: 15px; /* Memberikan jarak atas di bagian cerita lanjutan */
+}
+h1 {
+  font-family: "MyCustomFont", Times, serif;
+  font-size: 500%;
+}
+
+.ini {
+  font-family: "MyCustomFont", Times, serif;
+  font-size: 200%;
+}
+#cerita {
+  padding: 20px;
+  background-color: #444;
+}
+
+.ceritaLanjut {
+  display: none;
+  margin-top: 20px;
+  background-color: #555;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: #2f4f4f;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

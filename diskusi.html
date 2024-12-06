@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Diskusi</title>
+    <link rel="stylesheet" href="diskusi.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="left">Home</a></li>
+          <li><a href="cerita.html" class="right">Cerita Horor</a></li>
+        </ul>
+      </nav>
+      <h1>Forum Diskusi</h1>
+      <p>Bagikan pendapat atau ceritamu dengan komunitas!</p>
+    </header>
+
+    <main>
+      <!-- Form Diskusi -->
+      <section id="discussionForm">
+        <h2>Mulai Diskusi</h2>
+        <form id="formKomentar">
+          <label for="nama">Nama:</label>
+          <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+
+          <label for="komentar">Komentar:</label>
+          <textarea
+            id="komentar"
+            placeholder="Tulis komentar Anda"
+            required
+          ></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
+      <!-- Daftar Diskusi -->
+      <section id="discussionList">
+        <h2>Diskusi Terkini</h2>
+        <div id="listKomentar">
+          <!-- Komentar akan ditampilkan di sini -->
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

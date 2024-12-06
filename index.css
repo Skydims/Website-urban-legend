@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "MyCustomFont"; /* Nama font yang akan Anda gunakan */
+  src: url("fonts/MYSCARS_.ttf") format("truetype"),
+    /* URL ke file font */ url("fonts/MYBLS___.ttf") format("truetype"); /* URL ke file font */
+  font-weight: normal; /* Atur berat font (normal, bold, dll.) */
+  font-style: normal; /* Atur gaya font (normal, italic, dll.) */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b0000;
+  padding: 20px 30px;
+}
+.navbar .logo {
+  font-size: 2em;
+}
+.navbar .logo span {
+  color: red;
+}
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1em;
+}
+.navbar .nav-links a:hover {
+  color: #ccc;
+}
+.container {
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-family: "MyCustomFont", sans-serif;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+p.subtitle {
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.buttons {
+  margin-bottom: 20px;
+}
+.buttons button {
+  font-family: "MyCustomFont", sans-serif;
+  background-color: #4a4a4a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.buttons button:hover {
+  background-color: #6a6a6a;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card h3 {
+  font-family: "MyCustomFont", sans-serif;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+.card p {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: #d3d3d3;
+}
+
+.more-text {
+  display: none; /* Awalnya teks tambahan disembunyikan */
+}
+
+.read-more-btn {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.media-populer {
+  padding: 20px;
+  text-align: center;
+}
+.media-populer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.media-populer iframe {
+  width: 80%;
+  height: 450px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
