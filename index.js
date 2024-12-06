@@ -7,6 +7,20 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function toggleText(button) {
+  const card = button.parentElement; // Mendapatkan elemen card tempat tombol berada
+  const moreText = card.querySelector(".more-text"); // Elemen teks tersembunyi
+
+  if (moreText.style.display === "none" || !moreText.style.display) {
+    // Jika teks tersembunyi, tampilkan
+    moreText.style.display = "inline";
+    button.textContent = "Tutup";
+  } else {
+    // Jika teks terlihat, sembunyikan
+    moreText.style.display = "none";
+    button.textContent = "Selengkapnya";
+  }
+}
 // Diskusi dengan Local Storage
 document.addEventListener("DOMContentLoaded", function () {
   const formKomentar = document.getElementById("formKomentar");
